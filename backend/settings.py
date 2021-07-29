@@ -130,19 +130,6 @@ STATIC_URL = '/static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-
-# WEBPACK_LOADER = {
-#     'DEFAULT': {
-#         'BUNDLE_DIR_NAME': 'dist/',
-#         'STATS_FILE': os.path.join(BASE_DIR, 'frontend/webpack-stats.json'),
-#     }
-# }
-
-
-# STATICFILES_DIRS = (
-#     os.path.join(BASE_DIR, 'backend/assets'),
-# )
-
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'public/static/')
 
@@ -151,11 +138,11 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'public/media/')
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'public/static_dev/'),
-    os.path.join(BASE_DIR, "ui/dist"), # Bundle de VUE
+    os.path.join(BASE_DIR, "frontend/dist"), # Bundle de VUE
 )
 
 # Directorio de Vue
-UI_DIR = os.path.join(BASE_DIR, 'ui/')
+UI_DIR = os.path.join(BASE_DIR, 'frontend/')
 
 # Opciones de webpack-loader
 WEBPACK_LOADER = {
